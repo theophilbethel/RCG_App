@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "fr.reseau-chretien-gironde.rcg"
+        versionCode = "1"
+        version     = "1.0.0" >
+
+	<name>RCG</name>
+
+	<description>Toutes les informations du Réseau Chrétien de la Gironde sur votre smartphone ! Rencontres, concerts et événements chrétiens, églises, associations + des services en lignes de petites annonces et de demandes de prières...</description>
+
+	<author href="http://reseau-chretien-gironde.fr/" email="contact@reseau-chretien-gironde.fr">Phil</author>
+
+	<gap:platform name="android" />
+	<preference name="android-build-tool" value="gradle" />
+
+	<preference name="phonegap-version" value="cli-6.3.0" />
+	<preference name="permissions" value="none"/>
+
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-plugin-crosswalk-webview" spec="1.5.0" source="npm" />
+
+	<!-- Whitelist policy  -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- SplashScreen configuration -->
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="FadeSplashScreenDuration" value="300" />
+	<preference name="ShowSplashScreenSpinner" value="false" />
+
+	<!-- Icons and Splashscreens declaration -->
+
+	<!-- Icons -->
+	<icon src="icon.png"  gap:platform="android"/>
+	<icon src="./icons/icon-app-rcg-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="./icons/icon-app-rcg-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="./icons/icon-app-rcg-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="./icons/icon-app-rcg-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="./icons/icon-app-rcg-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="./icons/icon-app-rcg-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+	
+	<!-- Splashscreens -->
+	<gap:splash src="splash.9.png"  gap:platform="android"/>
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-ldpi.9.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-mdpi.9.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-hdpi.9.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<gap:splash src="./splashscreens/splashscreen-app-rcg-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+</widget>
